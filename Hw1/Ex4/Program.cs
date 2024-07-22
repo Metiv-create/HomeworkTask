@@ -4,6 +4,6 @@
     {
         string a1 = "привет";
 
-        Console.WriteLine(a2 + ",hello");
+        Console.WriteLine(a1 + ", hello");
     }
 }
