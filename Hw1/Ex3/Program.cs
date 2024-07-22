@@ -1,4 +1,4 @@
-﻿class Program 
+﻿class Program
 {
     public static void Main(string[] args)
     {
@@ -6,7 +6,7 @@
         int b = 11;
         int c = 3;
         a = a + b;
-        
-    Console.WriteLine(a / c);
+
+        Console.WriteLine(a / c);
     }
 }

@@ -2,10 +2,8 @@
 {
     public static void Main(string[] args)
     {
-        string a1 = "при";
-        string a2 = "вет";
+        string a1 = "привет";
 
-        Console.Write(a1);
-        Console.Write(a2);
+        Console.WriteLine(a2 + ",hello");
     }
 }

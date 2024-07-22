@@ -1,7 +1,7 @@
-﻿class Program 
+﻿class Program
 {
-public static void Main(string[] args)
-{
-Console.Write("Привет, мир!");
-}
+    public static void Main(string[] args)
+    {
+        Console.Write("Привет, мир!");
+    }
 }
