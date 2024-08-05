@@ -32,11 +32,11 @@ namespace Ex02
             public static int sheepCount = 0;
             public static int sheepPrice = 0;
 
-            public void SheepCalculator(int Price)
+            public void SheepCalculator(int sheepPrice)
             {
                 /* Добавьте свой код ниже */
                 sheepCount++;
-                sheepPrice = Price;
+                Sheep.sheepPrice = sheepPrice;
             }
         }
     }
