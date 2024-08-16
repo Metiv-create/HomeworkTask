@@ -32,33 +32,29 @@ namespace Ex30
         /* Добавьте свой код ниже */
         public static void GetClothes(int a)
         {
-            if (a == 20)
+            switch (a)
             {
-                Console.WriteLine("На улице 20 градусов. Надеваем футболку и джинсы");
-            }
-            else if(a== 25)
-            {
-                Console.WriteLine("Надеваем футболку и джинсы");
-            }
-            else if(a== 27)
-            {
-                Console.WriteLine("Надеваем футболку и шорты");
-            }
-            else if(a == 30)
-            {
-                Console.WriteLine("Надеваем футболку, шорты и кепку");
-            }
-            else if(a>31)
-            {
-                Console.WriteLine("Надеваем шорты и кепку");
-            }
-            else if(a<20)
-            {
-                Console.WriteLine("Сидим дома...зима близко!");
-            }
-            else
-            {
-                Console.WriteLine("Сидим дома...я не знаю, что надеть");
+                case 20:
+                    Console.WriteLine("На улице 20 градусов. Надеваем футболку и джинсы");
+                    break;
+                case 25:
+                    Console.WriteLine("Надеваем футболку и джинсы");
+                    break;
+                case 27:
+                    Console.WriteLine("Надеваем футболку и шорты");
+                    break;
+                case 30:
+                    Console.WriteLine("Надеваем футболку, шорты и кепку");
+                    break;
+                case > 31:
+                    Console.WriteLine("Надеваем шорты и кепку");
+                    break;
+                case < 20:
+                    Console.WriteLine("Сидим дома...зима близко!");
+                    break;
+                default:
+                    Console.WriteLine("Сидим дома...я не знаю, что надеть");
+                    break;
             }
         }
     }
