@@ -23,14 +23,14 @@ namespace Ex02
             /* Добавьте свой код ниже */
             int n = int.Parse(Console.ReadLine());
 
-            List<int> b = new List<int>();
+            List<int> nums = new List<int>();
 
             for(int i = 0; i< n;i++)
             {
                 int a = int.Parse(Console.ReadLine());
-                b.Add(a);
+                nums.Add(a);
             }
-            int minNum = b.Min();
+            int minNum = nums.Min();
             Console.WriteLine(minNum);
         }
     }

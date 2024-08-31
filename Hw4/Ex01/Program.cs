@@ -33,13 +33,13 @@ namespace Ex01
             {
                 Console.WriteLine(c);
             }
-            else if(d < b && d < c && d < a && a <e)
+            else if(e < b && e < c && e < a && e <d)
             {
-                Console.WriteLine(d);
+                Console.WriteLine(e);
             }
             else
             {
-                Console.WriteLine(e);
+                Console.WriteLine(d);
             }
         }
     }
