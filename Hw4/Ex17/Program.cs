@@ -26,6 +26,7 @@ namespace Ex17
 
             flower.GetColor();
             flower.GetTitle();
+            Console.WriteLine(flower.ToString());
         }
 
         public void GetColor()
@@ -47,6 +48,10 @@ namespace Ex17
         {
             /* Добавьте свой код ниже */
             title = newTitle;
+        }
+        public override string ToString()
+        {
+            return $"{color}";
         }
     }
 }
