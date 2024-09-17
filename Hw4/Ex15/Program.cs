@@ -31,21 +31,28 @@ namespace Ex15
      *      3) Присваивает значение "Аноним" имени экземпляра, если получена пустая строка с именем.
      */
 
-   
+
     public class Animal
     {
         /* Добавьте свой код ниже */
-        public string Name;
-        public int Speed;
-        public int Age;
-        public Human Owner;
+        public string name;
+        public int speed;
+        public int age;
+        public Human owner;
 
         public Animal(string name, int speed, int age, Human owner)
         {
-            Name = 
-            Speed = speed <= 0 ? 121 : speed;
-            Age = age <= 0 ? 7 : age;
-            Owner = owner.Name == "Аноним" ? new Human("", owner.Age) : owner;
+            if (name == null || name == "")
+            {
+                this.name = "Кеша";
+            }
+            else
+            {
+                this.name = char.ToUpper(name[0]) + name.Substring(1);
+            }
+            speed = speed <= 0 ? 121 : speed;
+            age = age <= 0 ? 7 : age;
+            owner = owner.name == "Аноним" ? new Human("", owner.age) : owner;
         }
 
 
@@ -55,24 +62,32 @@ namespace Ex15
             Human owner = new Human("", 30);
             Animal animal = new Animal("", 0, 0, owner);
 
-            Console.WriteLine($"Animal Name: {animal.Name}");
-            Console.WriteLine($"Animal Speed: {animal.Speed}");
-            Console.WriteLine($"Animal Age: {animal.Age}");
-            Console.WriteLine($"Owner Name: {animal.Owner.Name}");
-            Console.WriteLine($"Owner Age: {animal.Owner.Age}");
+            Console.WriteLine($"Animal Name: {animal.name}");
+            Console.WriteLine($"Animal Speed: {animal.speed}");
+            Console.WriteLine($"Animal Age: {animal.age}");
+            Console.WriteLine($"Owner Name: {animal.owner.name}");
+            Console.WriteLine($"Owner Age: {animal.owner.age}");
         }
     }
 
     /* Добавьте свой код ниже */
     public class Human
     {
-        public string Name;
-        public int Age;
+        public string name;
+        public int age;
 
         public Human(string name, int age)
         {
-            Name =
-            Age = age;
+            if (name == null || name == "")
+            {
+                this.name = "Аноним";
+            }
+            else
+            {
+                this.name = char.ToUpper(name[0]) + name.Substring(1);
+            }
+
+            this.age = age;
         }
     }
 }

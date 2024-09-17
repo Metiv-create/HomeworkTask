@@ -23,10 +23,21 @@ namespace Ex28
         public string Name { get; set; }
         public int Age { get; set; } = 100;
         public int Speed { get; set; } = 100;
-        public void ChangeObject(string name)
+            public void ChangeObject(string name)
         {
-            char firstLetter = name [0];
-            char lastLetter = name [name.Length-1];
+           
+            if (char.IsUpper(name[0]))
+            {
+                Age = 50; 
+            }
+            if (char.IsUpper(name[name.Length - 1]))
+            {
+                Speed = 10;
+            }
+            if (char.IsDigit(name[name.Length - 1]))
+            {
+                Age *= 2;
+            }
         }
         public static void Main(string[] args)
         {

@@ -28,28 +28,48 @@ namespace Ex13
         public string Address;
         public Dog(string name)
         {
-
+            Name = name;
+            Age = 1;
+            Weight = 5;
+            Color = "Brown";
+            Address = "Unknown";
         }
         public Dog(string name, double weight, int age)
         {
-           
+            Name = name;
+            Age = age;
+            Weight = weight;
+            Color = "Brown";
+            Address = "Unknown";
         }
         public Dog(string name, int age)
         {
-         
+            Name = name;
+            Age = age;
+            Weight = 5;
+            Color = "Brown";
+            Address = "Unknown";
         }
         public Dog(double weight, string color)
         {
-           
+            Name = "Unknown";
+            Age = 1;
+            Weight = weight;
+            Color = color;
+            Address = "Unknown";
         }
 
         public Dog(double weight, string color, string address)
         {
-           
+            Name = "Unknown";
+            Age = 1;
+            Weight = weight;
+            Color = color;
+            Address = address;
         }
         public override string ToString()
         {
-        return $"Имя: {Name}, Вес: {Weight} кг, Возраст: {Age} лет, Цвет: {Color}, Адрес: {Address}";
+            return $"Имя: {Name}, Вес: {Weight} кг, Возраст: {Age} лет, Цвет: {Color}, Адрес: {Address}";
         }
         public static void Main(string[] args)
         {

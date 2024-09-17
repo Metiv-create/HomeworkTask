@@ -30,29 +30,18 @@ namespace Ex21
         public Human(string name)
         {
             Name = name;
-            Age = 0; 
+            Age = 19; 
             Profession = "студент"; 
         }
+        
         public override string ToString()
         {
             return $"Имя: {Name}\nВозраст: {Age}\nПрофессия: {Profession}";
         }
-        public void SetProfessionAndAge(string profession, int age)
-        {
-            if (Profession == "студент")
-            {
-                Profession = profession;
-            }
-            if (Age == 0) 
-            {
-                Age = age;
-            }
-        }
-
+        
         public static void Main(string[] args)
         {
             Human human = new Human("Егор");
-            human.SetProfessionAndAge("програмист", 0);
             Console.WriteLine(human.ToString());
         }
         /* Добавьте свой код ниже */
