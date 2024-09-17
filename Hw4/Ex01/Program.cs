@@ -15,31 +15,22 @@ namespace Ex01
         public static void Main(string[] args)
         {
             /* Добавьте свой код ниже */
-            int a =int.Parse(Console.ReadLine());
-            int b =int.Parse(Console.ReadLine());
-            int c =int.Parse(Console.ReadLine());
-            int d =int.Parse(Console.ReadLine());
-            int e =int.Parse(Console.ReadLine());
-            
-            if (a < b && a < c && a < d && a <e)
             {
-                Console.WriteLine(a);
-            }
-            else if (b < a && b < c && b < d && b <e)
-            {
-                Console.WriteLine(b);
-            }
-            else if (c < b && c < a && c < d && c <e)
-            {
-                Console.WriteLine(c);
-            }
-            else if(d < b && d < c && d < a && a <e)
-            {
-                Console.WriteLine(d);
-            }
-            else
-            {
-                Console.WriteLine(e);
+                int[] numbers = new int[5];
+                int min = int.MaxValue;
+
+                Console.WriteLine("Введите 5 чисел:");
+                for (int i = 0; i < 5; i++)
+                {
+                    numbers[i] = int.Parse(Console.ReadLine());
+
+                    if (numbers[i] < min)
+                    {
+                        min = numbers[i];
+                    }
+                }
+
+                Console.WriteLine($"Наименьшее число: {min}");
             }
         }
     }
