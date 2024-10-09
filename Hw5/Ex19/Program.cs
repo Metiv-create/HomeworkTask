@@ -30,9 +30,9 @@ namespace l6t19
         {
             /* Добавьте свой код ниже */
             string[] words = input.Split(" ");
-            bool russWord = true;
             for (int i = 0; i < words.Length; i++)
             {
+                bool russWord = true;
                 string word = words[i];
                 foreach (char symbol in word)
                 {
