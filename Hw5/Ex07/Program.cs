@@ -41,16 +41,16 @@ namespace l6t7
     {
         public int X { get; }
         public int Y { get; }
-        public double R { get; }
+        public int R { get; }
         public string Color { get; }
         public Circle(int x, int y)
         {
             X = x;
-            Y = Y;
+            Y = y;
             R = 1;
             Color = "purple";
         }
-        public Circle(double r)
+        public Circle(int r)
         {
             X = 2;
             Y = 2;

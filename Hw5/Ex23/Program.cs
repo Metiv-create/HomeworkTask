@@ -49,12 +49,12 @@ namespace l6t23
                 {
                     boolList.Add((bool)item);
                 }
-                Console.WriteLine($"Список целых чисел включает в себя {intList.Count} элементов.");
-                Console.WriteLine($"Список строк включает в себя {stringList.Count} элементов.");
-                Console.WriteLine($"Список дробных чисел включает в себя {doubleList.Count} элементов.");
-                Console.WriteLine($"Список логических значений включает в себя {boolList.Count} элементов.");
-                Console.WriteLine($"Общее количество элементов в динамическом массиве arr: {arr.Count}.");
             }
+            Console.WriteLine($"Список целых чисел включает в себя {intList.Count} элементов.");
+            Console.WriteLine($"Список строк включает в себя {stringList.Count} элементов.");
+            Console.WriteLine($"Список дробных чисел включает в себя {doubleList.Count} элементов.");
+            Console.WriteLine($"Список логических значений включает в себя {boolList.Count} элементов.");
+            Console.WriteLine($"Общее количество элементов в динамическом массиве arr: {arr.Count}.");
         }
     }
 }

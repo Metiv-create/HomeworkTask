@@ -26,10 +26,40 @@ namespace l6t19
             Console.WriteLine(WordSorter(s3));
         }
 
-        public static string WordSorter()
+        public static string WordSorter(string input)
         {
             /* Добавьте свой код ниже */
-            return null;
+            string[] words = input.Split(" ");
+            bool russWord = true;
+            for (int i = 0; i < words.Length; i++)
+            {
+                string word = words[i];
+                foreach (char symbol in word)
+                {
+                    if (symbol >= 'А' && symbol <= 'Я' || symbol >= 'а' && symbol <= 'я' || symbol == 'Ё' || symbol == 'ё')
+                    {
+
+                    }
+                    else
+                    {
+                        russWord = false;
+                        break;
+                    }
+                }
+
+                if (russWord == true)
+                {
+                    char[] letter = word.ToCharArray();
+                    for (int j = 0; j < letter.Length; j++)
+                    {
+                        letter[j] = char.ToLower(letter[j]);
+                    }
+                    Array.Sort(letter, (x, y) => x.CompareTo(y));
+                    string sortWord = new string(letter);
+                    words[i] = sortWord;
+                }
+            }
+            return string.Join(" ", words);
         }
     }
 }

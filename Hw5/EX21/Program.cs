@@ -21,9 +21,9 @@ namespace l6t21
         public static void IntMultiply(int n, int m)
         {
             /* Добавьте свой код ниже */
-            for (int i = 0; i < n; i++)
+            for (int i = 0; i < m; i++)
             {
-                for (int j = 0; j < m; j++)
+                for (int j = 0; j < n; j++)
                 {
                     Console.Write("1 ");
                 }
