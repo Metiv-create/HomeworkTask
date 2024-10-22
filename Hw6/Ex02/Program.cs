@@ -26,7 +26,7 @@ namespace l7t2
             }
             for (int i = 0; i < arr.Count; i++)
             {
-                Console.WriteLine(arr[i]);
+                Console.Write($"{arr[i]}-");
             }
         }
     }

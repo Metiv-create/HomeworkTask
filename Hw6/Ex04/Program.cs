@@ -21,10 +21,23 @@ namespace l7t4
         public static void Main(string[] args)
         {
             /* Добавьте свой код ниже */
-
-            for (int i = 0; i < arrayList.Count; i++)
+            HashSet<int> nums = arrayList.Cast<int>().ToHashSet<int>();
+            arrayList = new ArrayList(nums.ToList());
+            arrayList.Sort();
+            int length = arrayList.Count;
+            int min = (int)arrayList[0];
+            int max = (int)arrayList[length - 1];
+            for (int i = min; i < max + 1; i++)
             {
-                Console.WriteLine(arrayList[i]);
+                if (!arrayList.Contains(i))
+                {
+                    arrayList.Add(i);
+                }
+            }
+            arrayList.Sort();
+            foreach (int item in arrayList)
+            {
+                Console.WriteLine(item);
             }
         }
     }
